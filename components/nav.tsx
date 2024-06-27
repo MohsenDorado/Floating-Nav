@@ -30,7 +30,7 @@ export default function Nav() {
 
   return (
     <nav className="p-8 flex justify-center">
-      <ul className="flex gap-36">
+      <ul className="flex gap-10 lg:gap-28 md:gap-16">
         <AnimatePresence>
           {links.map((link) => {
            

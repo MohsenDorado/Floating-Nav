@@ -11,15 +11,15 @@ export default function Nav() {
   const links = [
     {
       path: "/",
-      name: "home",
+      name: "Home",
     },
     {
       path: "/projects",
-      name: "projects",
+      name: "Projects",
     },
     {
       path: "/contact",
-      name: "contact",
+      name: "Contact",
     },
   ]
   const pathname = usePathname()
@@ -30,7 +30,7 @@ export default function Nav() {
 
   return (
     <nav className="p-8 flex justify-center">
-      <ul className="flex gap-12">
+      <ul className="flex gap-36">
         <AnimatePresence>
           {links.map((link) => {
            
@@ -40,22 +40,19 @@ export default function Nav() {
           
             return (
               <motion.li
-                onPointerMove={(event) => {
-                  
-                }}
+                
                 key={link.path}
                
               >
                 <MotionLink
                   className={cn(
-                    "font-medium relative rounded-md text-sm py-2 px-4 transition-all duration-500 ease-out hover:bg-blue-50",
-                    pathname === link.path ? "" : ""
+                    "font-medium relative rounded-xl text-sm py-2 px-4 transition-all duration-500 ease-out hover:bg-blue-50"
                   )}
                   href={link.path}
                 >
                    <motion.span
                     
-                    className="z-10 relative"
+                    className="font-bold z-10 relative"
                   > 
                     {link.name}
                    </motion.span> 

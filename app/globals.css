@@ -112,3 +112,34 @@ span,
 li {
   transition: all 1s var(--elastic-out);
 }
+
+.shiny{
+
+    position: relative;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+}
+
+.shiny:before{
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 40px;
+    background: #93c5fd;
+    box-shadow: 0 0 50px #fff;
+    filter: blur(1px);
+    opacity: 0.4;
+    transition: 0.7s;
+    transform: rotate(-20deg) translateX(-60px);
+    top: -30px;
+    
+
+}
+.shiny:hover:before{
+
+    transform: rotate(-20deg) translate(170px,70px);
+
+}

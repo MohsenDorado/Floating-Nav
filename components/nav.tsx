@@ -10,12 +10,12 @@ import {
 export default function Nav() {
   const links = [
     {
-      path: "/",
-      name: "Home",
-    },
-    {
       path: "/projects",
       name: "Projects",
+    },
+    {
+      path: "/",
+      name: "Home",
     },
     {
       path: "/contact",
@@ -46,7 +46,7 @@ export default function Nav() {
               >
                 <MotionLink
                   className={cn(
-                    "font-medium relative rounded-xl text-sm py-2 px-4 transition-all duration-500 ease-out hover:bg-blue-50"
+                    "font-medium relative rounded-xl text-sm py-2 px-4 transition-all duration-500 ease-out shiny"
                   )}
                   href={link.path}
                 >

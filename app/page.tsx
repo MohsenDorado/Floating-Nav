@@ -1,6 +1,15 @@
+import Nav from "@/components/nav"
 import Image from "next/image"
 
 export default function Home() {
-  return (<div>Home</div>
+  return (
+    <>
+    <Nav/>
+     <div>
+    
+    
+    Home</div></>
+  
+ 
   )
 }

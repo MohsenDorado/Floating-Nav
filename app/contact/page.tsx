@@ -1,3 +1,13 @@
+import Nav from "@/components/nav"
+
 export default function Page() {
-  return <h1>Contact</h1>
+  return(
+    <>
+    <Nav/>
+    <div>
+      Contacts
+    </div>
+    
+    </>
+  )
 }
